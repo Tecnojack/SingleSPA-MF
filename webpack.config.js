@@ -20,12 +20,13 @@ module.exports = (webpackConfigEnv, argv) => {
     },
     plugins: [
       new ModuleFederationPlugin({
-        name: "home",
+        name: "root",
         library: { type: "var" },
         filename: "remoteEntry.js",
         remotes: {
-          ngmfe1: "ngmfe1",
-          ngmfe2: "ngmfe2",
+          agrodatai: "agrodatai",
+          security: "security",
+          origin: "origin",
         },
         exposes: {},
         shared: [],

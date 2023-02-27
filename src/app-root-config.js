@@ -1,16 +1,20 @@
 import { registerApplication, start } from "single-spa";
 
 registerApplication({
-  name: "angular1",
-  app: () => import("ngmfe1/MFEModule1"),
-  activeWhen: ["#/angular1", () => ["#/", ""].includes(location.hash)],
+  name: "security",
+  app: () => import("security/Security"),
+  activeWhen: ["#/security", () => ["#/", ""].includes(location.hash)],
 });
 registerApplication({
-  name: "angular2",
-  app: () => import("ngmfe2/MFEModule2"),
-  activeWhen: "#/angular2",
+  name: "agrodatai",
+  app: () => import("agrodatai/Agrodatai"),
+  activeWhen: "#/agrodatai",
 });
-
+registerApplication({
+  name: "origin",
+  app: () => import("origin/Origin"),
+  activeWhen: "#/origin",
+});
 start({
   urlRerouteOnly: true,
 });

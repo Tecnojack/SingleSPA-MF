@@ -27,6 +27,11 @@ module.exports = (config, options) => {
           strictVersion: true,
           requiredVersion: "^15.1.0",
         },
+        "bootstrap": {
+          singleton: true,
+          strictVersion: true,
+          requiredVersion: "^5.2.3",
+        },
         "rxjs": {
           singleton: true,
           strictVersion: true,

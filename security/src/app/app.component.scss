@@ -1,0 +1,66 @@
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Then import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+// Optional components
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/helpers";
+@import "../../node_modules/bootstrap/scss/utilities/api";
+/**
+* Template Name: Bethany - v4.10.0
+* Template URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #b004e9;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: url('https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/modulos%2Bcomputador2.png');
+
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+  }
+}
+.card-body{
+width: 50%;
+}
+
+.getstarted,
+ .getstarted:focus {
+  background: #009970;
+  padding: 10px 25px;
+  margin-left: 30px;
+  margin-right: 15px;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.getstarted:hover,
+.getstarted:focus:hover {
+  color: #fff;
+  background: #00b383;
+}
+a:link { text-decoration:none; } a:visited { text-decoration:none; }
